@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: aqua;
+      }
+
+      .cls-5 {
+        fill: #ff5b41;
+      }
+
+      .cls-6 {
+        fill: #756c6f;
+      }
+
+      .cls-7 {
+        fill: #0f172a;
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-9 {
+        stroke-width: .25px;
+      }
+
+      .cls-9, .cls-10 {
+        fill: none;
+      }
+
+      .cls-9, .cls-3 {
+        stroke: aqua;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-11 {
+        fill: #ffd66d;
+      }
+
+      .cls-12 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        stroke-width: .05px;
+      }
+    </style>
+    <clipPath id="clippath">
+      <ellipse class="cls-10" cx="7.79" cy="7.99" rx="16.36" ry="16.3"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="997.83" y1="1984.16" x2="1000.4" y2="1984.16" gradientTransform="translate(647.43 -2121.72) rotate(43.38)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2cd6c9"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="11.97" y1="7.68" x2="10.93" y2="6.54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2cd6c9"/>
+      <stop offset=".29" stop-color="#2bd3c7"/>
+      <stop offset=".44" stop-color="#2acbc0"/>
+      <stop offset=".56" stop-color="#28beb5"/>
+      <stop offset=".66" stop-color="#25aba5"/>
+      <stop offset=".75" stop-color="#219291"/>
+      <stop offset=".83" stop-color="#1d7477"/>
+      <stop offset=".9" stop-color="#175059"/>
+      <stop offset=".97" stop-color="#112737"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <g>
+      <path class="cls-7" d="m7.8,24c-8.82,0-16-7.18-16-16S-1.02-8,7.8-8,23.8-.82,23.8,8s-7.18,16-16,16Z"/>
+      <path class="cls-4" d="m7.8-7.5c8.55,0,15.5,6.95,15.5,15.5s-6.95,15.5-15.5,15.5S-7.7,16.55-7.7,8-.74-7.5,7.8-7.5m0-1C-1.31-8.5-8.7-1.11-8.7,8S-1.31,24.5,7.8,24.5s16.5-7.39,16.5-16.5S16.92-8.5,7.8-8.5h0Z"/>
+    </g>
+    <g class="cls-8">
+      <g>
+        <line class="cls-6" x1="9.17" y1="-14.92" x2="9.83" y2="34.82"/>
+        <line class="cls-6" x1="30.48" y1="10.88" x2="-16.08" y2="11.53"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <polyline class="cls-9" points="1.04 10.37 3.8 7.6 5.62 9.42 7.17 7.87 8.5 9.19 11.16 6.54"/>
+    <g>
+      <path class="cls-11" d="m11.2,7.32l-.23-.61-.62-.23s-.71.04-.99.99c0,0,.19-.15.32-.21,0,0-.4.62-.32,1.07.44.07,1.07-.32,1.07-.32-.06.13-.22.31-.22.31.95-.29.99-.99.99-.99Zm-.75.45s.1-.11.14-.2c0,0-.41.25-.69.21-.05-.29.2-.7.2-.7-.08.04-.2.14-.2.14.18-.61.64-.64.64-.64l.4.15.14.4s-.03.45-.64.64Z"/>
+      <path class="cls-5" d="m10.95,6.74l-.4-.15s-.46.03-.64.64c0,0,.12-.1.2-.14,0,0-.26.4-.2.7.28.04.69-.21.69-.21-.04.08-.14.2-.14.2.61-.18.64-.64.64-.64l-.14-.4Z"/>
+    </g>
+    <path class="cls-2" d="m.48,8.57c.69-.03,1.38-.03,2.07,0-.69.03-1.38.03-2.07,0,0,0,.69.03,0,0Z"/>
+    <path class="cls-2" d="m5.06,8.57c.35-.03.7-.03,1.05,0-.35.03-.7.03-1.05,0,0,0,.35.03,0,0Z"/>
+    <path class="cls-2" d="m9.56,8.57c1.99-.03,3.98-.03,5.96,0-1.99.03-3.98.03-5.96,0,0,0,1.99.03,0,0Z"/>
+    <polygon class="cls-3" points="12.7 4.59 12.63 4.95 12.92 5.17 12.56 5.21 12.43 5.54 12.29 5.22 11.93 5.2 12.19 4.96 12.09 4.62 12.41 4.8 12.7 4.59"/>
+    <polygon class="cls-12" points="10.95 6.7 8.83 7.09 12.21 5.37 10.69 8.85 10.95 6.7"/>
+    <polygon class="cls-1" points="10.95 6.7 12.21 5.37 10.69 8.85 10.95 6.7"/>
+  </g>
+</svg>
