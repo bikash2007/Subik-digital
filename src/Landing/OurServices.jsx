@@ -16,68 +16,68 @@ import {
 const OurServices = () => {
   const services = [
     {
-      icon: faPaintBrush,
-      title: 'Branding & Visual Identity',
-      description: 'Craft a unique brand identity that speaks volumes. From logos to brand guidelines, we create visual stories that resonate with your audience.',
-      features: ['Logo Design', 'Brand Strategy', 'Visual Guidelines', 'Brand Collateral'],
-      gradient: 'from-orange-400 to-pink-500',
-      glowColor: 'rgba(251, 146, 60, 0.4)'
-    },
-    {
-      icon: faPalette,
-      title: 'Graphics Design',
-      description: 'Eye-catching graphics that stop the scroll. Posters, social media content, advertisements, and everything visual.',
-      features: ['Social Media Graphics', 'Poster Design', 'Ad Creatives', 'Print Materials'],
-      gradient: 'from-pink-500 to-rose-500',
-      glowColor: 'rgba(236, 72, 153, 0.4)'
-    },
-    {
-      icon: faLaptopCode,
-      title: 'Website Design & Development',
-      description: 'Stunning, high-performance websites that convert visitors into customers. Built with cutting-edge technology.',
-      features: ['Custom Websites', 'E-Commerce', 'Landing Pages', 'Web Applications'],
-      gradient: 'from-cyan-400 to-blue-500',
-      glowColor: 'rgba(34, 211, 238, 0.4)'
-    },
-    {
-      icon: faMobileAlt,
-      title: 'UI/UX & App Interface Design',
-      description: 'Intuitive digital experiences that users love. We design interfaces that are both beautiful and functional.',
-      features: ['User Research', 'Wireframing', 'Prototyping', 'Usability Testing'],
-      gradient: 'from-violet-500 to-purple-600',
-      glowColor: 'rgba(139, 92, 246, 0.4)'
+      icon: faChartLine,
+      title: 'SEO (Search Engine Optimization)',
+      description: 'Dominate Google search results in Nepal with our expert on-page SEO, off-page SEO, and local SEO services. We help businesses in Kathmandu, Lalitpur, Bhaktapur, and Pokhara rank #1.',
+      features: ['On-Page SEO', 'Off-Page SEO', 'Local SEO Nepal', 'Technical SEO'],
+      gradient: 'from-emerald-400 to-teal-500',
+      glowColor: 'rgba(52, 211, 153, 0.4)'
     },
     {
       icon: faBullhorn,
       title: 'Social Media Management',
-      description: 'Build a thriving online presence. Strategic content, consistent engagement, and data-driven growth.',
-      features: ['Content Calendar', 'Community Management', 'Analytics', 'Growth Strategy'],
+      description: 'Professional management of Facebook, Instagram, and TikTok for brand growth in Nepal. We create engaging content and build communities that drive real business results.',
+      features: ['Facebook Marketing', 'Instagram Growth', 'TikTok Strategy', 'Community Management'],
       gradient: 'from-blue-500 to-indigo-600',
       glowColor: 'rgba(59, 130, 246, 0.4)'
     },
     {
       icon: faVideo,
-      title: 'Content Creation & Video Editing',
-      description: 'Compelling content that tells your story. From concept to final cut, we create videos that captivate.',
-      features: ['Video Production', 'Motion Graphics', 'Reels & Shorts', 'Podcast Editing'],
+      title: 'Video Marketing',
+      description: 'High-quality promotional and motion graphic videos for Instagram, TikTok, and Facebook. Captivate your audience with professional video content that converts viewers into customers.',
+      features: ['Promotional Videos', 'Motion Graphics', 'Reels & Shorts', 'Video Ads'],
       gradient: 'from-red-500 to-orange-500',
       glowColor: 'rgba(239, 68, 68, 0.4)'
     },
     {
-      icon: faCube,
-      title: 'Motion Graphics & 3D Visuals',
-      description: 'Bring your ideas to life with stunning animations and 3D visualizations that leave lasting impressions.',
-      features: ['3D Modeling', 'Animation', 'Visual Effects', 'Product Visualization'],
-      gradient: 'from-emerald-400 to-teal-500',
-      glowColor: 'rgba(52, 211, 153, 0.4)'
+      icon: faPaintBrush,
+      title: 'Content Marketing',
+      description: 'SEO-optimized blogs, articles, and content strategies designed to attract potential customers in Nepal. Build authority and drive organic traffic to your website.',
+      features: ['SEO Blog Writing', 'Article Creation', 'Content Strategy', 'Copywriting'],
+      gradient: 'from-orange-400 to-pink-500',
+      glowColor: 'rgba(251, 146, 60, 0.4)'
     },
     {
-      icon: faChartLine,
-      title: 'Digital Marketing & SEO',
-      description: 'Drive targeted traffic and grow your business. Data-driven strategies that deliver measurable results.',
-      features: ['SEO Optimization', 'PPC Campaigns', 'Email Marketing', 'Analytics'],
+      icon: faCube,
+      title: 'Google Business Marketing',
+      description: 'Google Business Profile setup and optimization for maximum local visibility in Nepal. Get found by customers searching for your services in Kathmandu and beyond.',
+      features: ['GBP Setup', 'Profile Optimization', 'Local Visibility', 'Review Management'],
       gradient: 'from-yellow-400 to-amber-500',
       glowColor: 'rgba(251, 191, 36, 0.4)'
+    },
+    {
+      icon: faPalette,
+      title: 'Ads Management',
+      description: 'Strategic PPC campaigns for Google Ads, Facebook Ads, and Instagram Ads. Maximize your ROI with data-driven ad management from Nepal\'s trusted digital marketing agency.',
+      features: ['Google Ads', 'Facebook Ads', 'Instagram Ads', 'Campaign Optimization'],
+      gradient: 'from-pink-500 to-rose-500',
+      glowColor: 'rgba(236, 72, 153, 0.4)'
+    },
+    {
+      icon: faLaptopCode,
+      title: 'Website Development & Optimization',
+      description: 'Modern, high-performance website development with stunning UI/UX design and technical SEO improvements. We build websites that rank higher and convert better for businesses in Nepal.',
+      features: ['Custom Websites', 'UI/UX Design', 'Technical SEO', 'E-Commerce'],
+      gradient: 'from-cyan-400 to-blue-500',
+      glowColor: 'rgba(34, 211, 238, 0.4)'
+    },
+    {
+      icon: faMobileAlt,
+      title: 'Reporting & Analytics',
+      description: 'Detailed performance tracking, monthly reports, and data-driven marketing decisions. Know exactly how your digital marketing campaigns are performing across Nepal.',
+      features: ['Performance Tracking', 'Monthly Reports', 'Data Analytics', 'ROI Analysis'],
+      gradient: 'from-violet-500 to-purple-600',
+      glowColor: 'rgba(139, 92, 246, 0.4)'
     }
   ];
 
@@ -183,7 +183,7 @@ const OurServices = () => {
   };
 
   return (
-    <section id="services" className="relative py-24 lg:py-32 overflow-hidden bg-dark-secondary">
+    <section id="services" className="relative py-12 md:py-24 lg:py-32 overflow-hidden bg-dark-secondary">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-grid opacity-20" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-neon-cyan/50 to-transparent" />
@@ -207,17 +207,17 @@ const OurServices = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
           <span className="inline-block px-4 py-2 rounded-full glass text-neon-cyan text-sm font-medium mb-4">
-            What We Do
+            Our Services
           </span>
           <h2 className="font-space text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Our <span className="text-gradient">Services</span>
+            Digital Marketing & Web Development <span className="text-gradient">Services in Nepal</span>
           </h2>
           <p className="text-white/60 text-lg max-w-2xl mx-auto">
-            From concept to creation, we offer end-to-end digital solutions that help your brand 
-            stand out and make an impact.
+            From SEO and social media marketing to website development and Google Ads — Subik Digital Hub 
+            offers end-to-end digital solutions for businesses across Nepal.
           </p>
         </motion.div>
 
@@ -234,11 +234,11 @@ const OurServices = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center mt-16"
+          className="text-center mt-12 md:mt-16"
         >
           <div className="glass-card inline-flex items-center gap-6 p-6 rounded-2xl">
             <p className="text-white/80">
-              Need a custom solution? <span className="text-white font-medium">Let's discuss your project.</span>
+              Looking for a custom digital marketing solution? <span className="text-white font-medium">Let's discuss how we can grow your business in Nepal.</span>
             </p>
             <motion.a
               href="#contact"

@@ -17,44 +17,44 @@ const WhyUs = () => {
     {
       icon: faLightbulb,
       title: 'Young & Creative Talent',
-      description: 'Fresh perspectives and innovative ideas from a passionate team of young creatives who understand modern trends.',
+      description: 'Fresh perspectives and innovative digital marketing strategies from a passionate team that understands the Nepal market and modern trends.',
       gradient: 'from-amber-400 to-orange-500',
       stat: 'Gen-Z Powered',
     },
     {
       icon: faBolt,
       title: 'Fast Delivery',
-      description: 'We respect your time. Quick turnarounds without compromising on quality, because your deadlines matter.',
+      description: 'Quick turnarounds on SEO, social media marketing, website development, and ads management without compromising on quality.',
       gradient: 'from-cyan-400 to-blue-500',
       stat: '48hr Turnaround',
     },
     {
       icon: faGem,
-      title: 'Premium Aesthetic Designs',
-      description: 'Awwwards-level quality in every project. We create designs that stand out and make a lasting impression.',
+      title: 'Premium Quality Results',
+      description: 'From website design to Google Ads campaigns, we deliver premium-quality digital marketing services that set your brand apart in Nepal.',
       gradient: 'from-purple-500 to-pink-500',
       stat: '100% Premium',
     },
     {
       icon: faChartLine,
-      title: 'Result-Focused Strategy',
-      description: 'Every design decision is backed by strategy. We create work that not only looks good but drives results.',
+      title: 'Data-Driven SEO Strategy',
+      description: 'Every SEO campaign, social media post, and ad is backed by data. We use analytics to ensure your digital marketing investment delivers measurable ROI.',
       gradient: 'from-emerald-400 to-teal-500',
       stat: 'Data-Driven',
     },
     {
       icon: faHandshake,
       title: 'Transparent Pricing',
-      description: 'No hidden fees, no surprises. Clear pricing from day one so you know exactly what you\'re investing in.',
+      description: 'No hidden fees. Clear, affordable pricing for all our digital marketing and web development services in Nepal — perfect for startups and businesses alike.',
       gradient: 'from-blue-500 to-indigo-600',
       stat: 'No Hidden Costs',
     },
     {
       icon: faGlobe,
-      title: 'Nepali-Based Global Agency',
-      description: 'Proudly based in Nepal, serving clients worldwide. Local expertise with a global perspective.',
+      title: 'Nepal\'s Trusted Digital Agency',
+      description: 'Proudly based in Kathmandu, serving businesses across Lalitpur, Bhaktapur, Pokhara, and all of Nepal with world-class digital marketing services.',
       gradient: 'from-rose-500 to-red-600',
-      stat: '5+ Countries',
+      stat: 'All Nepal',
     },
   ];
 
@@ -72,7 +72,7 @@ const WhyUs = () => {
   };
 
   return (
-    <section id="why-us" className="relative py-24 lg:py-32 overflow-hidden bg-dark-primary">
+    <section id="why-us" className="relative py-12 md:py-24 lg:py-32 overflow-hidden bg-dark-primary">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-mesh opacity-40" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-neon-cyan/5 rounded-full blur-[150px]" />
@@ -87,17 +87,17 @@ const WhyUs = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
           <span className="inline-block px-4 py-2 rounded-full glass text-neon-cyan text-sm font-medium mb-4">
             Why Choose Us
           </span>
           <h2 className="font-space text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            What Makes Us <span className="text-gradient">Different</span>
+            Why Choose <span className="text-gradient">Subik Digital Hub</span>
           </h2>
           <p className="text-white/60 text-lg max-w-2xl mx-auto">
-            We're not just another design agency. Here's why brands choose Subik Design Hub 
-            for their creative needs.
+            We're not just another digital agency. Here's why businesses across Nepal trust Subik Digital Hub 
+            for their digital marketing and web development needs.
           </p>
         </motion.div>
 
@@ -107,7 +107,7 @@ const WhyUs = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 md:mb-16"
         >
           {advantages.map((advantage, index) => (
             <motion.div
@@ -157,7 +157,7 @@ const WhyUs = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="glass-card p-8 md:p-12 rounded-3xl"
+          className="glass-card p-6 md:p-12 rounded-3xl"
         >
           <div className="grid md:grid-cols-4 gap-8 text-center">
             {[
@@ -195,13 +195,13 @@ const WhyUs = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-center mt-16"
+          className="text-center mt-12 md:mt-16"
         >
           <h3 className="font-space font-bold text-2xl md:text-3xl text-white mb-4">
             Ready to <span className="text-gradient">Transform</span> Your Brand?
           </h3>
           <p className="text-white/60 mb-8 max-w-xl mx-auto">
-            Join the growing list of businesses that trust Subik Design Hub for their creative needs.
+            Join the growing list of businesses across Nepal that trust Subik Digital Hub for expert digital marketing, SEO, and web development.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <motion.a

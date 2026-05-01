@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../Media/logo.svg';
+import logo from '../Media/logo.png';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
@@ -60,7 +60,7 @@ const Navbar = () => {
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-neon-cyan to-neon-purple opacity-0 group-hover:opacity-50 blur-lg transition-opacity duration-500" />
                 <img 
                   src={logo} 
-                  alt="Subik Design Hub" 
+                  alt="Subik Digital Hub — Digital Marketing Agency Nepal" 
                   className="w-12 h-12 rounded-full border border-white/20 relative z-10 transition-transform duration-300 group-hover:border-neon-cyan/50"
                 />
               </div>
@@ -68,7 +68,7 @@ const Navbar = () => {
                 <h1 className="font-space font-bold text-lg text-white group-hover:text-gradient transition-all duration-300">
                   SUBIK
                 </h1>
-                <p className="text-xs text-white/50 -mt-1 tracking-wider">DESIGN HUB</p>
+                <p className="text-xs text-white/50 -mt-1 tracking-wider">DIGITAL HUB</p>
               </div>
             </motion.a>
 
@@ -118,7 +118,7 @@ const Navbar = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Start a Project
+                Get a Free Quote
               </motion.a>
             </div>
 
@@ -198,7 +198,7 @@ const Navbar = () => {
                   className="btn-neon-filled w-full mt-6 text-center"
                   whileTap={{ scale: 0.98 }}
                 >
-                  Start a Project
+                  Get a Free Quote
                 </motion.a>
               </div>
             </motion.div>

@@ -100,7 +100,7 @@ const Testimonials = () => {
   const visibleIndices = getVisibleTestimonials();
 
   return (
-    <section id="testimonials" className="relative py-24 lg:py-32 overflow-hidden bg-dark-secondary">
+    <section id="testimonials" className="relative py-12 md:py-24 lg:py-32 overflow-hidden bg-dark-secondary">
       {/* Background */}
       <div className="absolute inset-0 bg-mesh opacity-30" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-neon-cyan/50 to-transparent" />
@@ -124,7 +124,7 @@ const Testimonials = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
           <span className="inline-block px-4 py-2 rounded-full glass text-neon-cyan text-sm font-medium mb-4">
             Testimonials
@@ -258,7 +258,7 @@ const Testimonials = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-col items-center mt-16"
+          className="flex flex-col items-center mt-10 md:mt-16"
         >
           <div className="flex -space-x-4 mb-4">
             {testimonials.slice(0, 5).map((testimonial, index) => (

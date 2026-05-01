@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone, faLocationDot, faArrowUp } from '@fortawesome/free-solid-svg-icons';
-import logo from '../Media/logo.svg';
+import logo from '../Media/logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -26,11 +26,11 @@ const Footer = () => {
     {
       title: 'Services',
       links: [
-        { name: 'Branding', href: '#services' },
-        { name: 'Web Development', href: '#services' },
-        { name: 'UI/UX Design', href: '#services' },
-        { name: 'Digital Marketing', href: '#services' },
-        { name: 'Motion Graphics', href: '#services' },
+        { name: 'SEO Services', href: '#services' },
+        { name: 'Social Media Marketing', href: '#services' },
+        { name: 'Website Development', href: '#services' },
+        { name: 'Google Ads Management', href: '#services' },
+        { name: 'Video Marketing', href: '#services' },
       ]
     },
     {
@@ -71,10 +71,10 @@ const Footer = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <img src={logo} alt="Subik Design Hub" className="w-14 h-14 rounded-full border border-white/20" />
+              <img src={logo} alt="Subik Digital Hub — Digital Marketing Agency Nepal" className="w-14 h-14 rounded-full border border-white/20" />
               <div>
-                <h3 className="font-space font-bold text-xl text-gradient">SUBIK DESIGN HUB</h3>
-                <p className="text-white/50 text-sm">Creative Digital Agency</p>
+                <h3 className="font-space font-bold text-xl text-gradient">SUBIK DIGITAL HUB</h3>
+                <p className="text-white/50 text-sm">Digital Marketing & Web Development — Nepal</p>
               </div>
             </motion.div>
             
@@ -85,8 +85,9 @@ const Footer = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              A youth-led creative powerhouse based in Nepal, crafting bold brands, stunning designs, 
-              and unforgettable digital experiences that push boundaries and inspire innovation.
+              Subik Digital Hub is Nepal's trusted digital marketing and web development agency based in Kathmandu. 
+              We provide expert SEO, social media marketing, Google Ads management, content marketing, video production, 
+              and website development services to help businesses across Nepal grow their online presence.
             </motion.p>
 
             {/* Social Links */}
@@ -181,7 +182,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-white/40 text-sm text-center md:text-left">
-              © {currentYear} Subik Design Hub. All rights reserved. Crafted with 💜 in Nepal
+              © {currentYear} Subik Digital Hub. All rights reserved. Digital Marketing Agency in Kathmandu, Nepal 💜
             </p>
             
             <div className="flex items-center gap-6">

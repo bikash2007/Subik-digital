@@ -49,7 +49,7 @@ const Hero = () => {
     <section 
       ref={containerRef}
       id="hero" 
-      className="relative h-screen min-h-[600px] max-h-[900px] flex items-center overflow-hidden bg-[#030014]"
+      className="relative min-h-[85vh] md:h-screen md:min-h-[700px] md:max-h-[1000px] flex items-center overflow-hidden bg-[#030014]"
     >
       {/* Deep Space Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#030014] via-[#0a0520] to-[#030014]" />
@@ -176,20 +176,20 @@ const Hero = () => {
 
       {/* === MAIN CONTENT === */}
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="max-w-2xl lg:max-w-3xl pt-20">
+        <div className="max-w-2xl lg:max-w-3xl pt-10 sm:pt-20">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-4"
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-2 sm:mb-4"
             style={{
               background: 'rgba(0, 255, 255, 0.05)',
               border: '1px solid rgba(0, 255, 255, 0.2)',
             }}
           >
             <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-            <span className="text-xs sm:text-sm font-medium text-cyan-400/90 tracking-wide">Nepal's Next-Gen Creative Agency</span>
+            <span className="text-[10px] sm:text-xs md:text-sm font-medium text-cyan-400/90 tracking-wide">#1 Digital Marketing Agency in Nepal</span>
           </motion.div>
 
           {/* Main Headline */}
@@ -197,15 +197,15 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="mb-4"
+            className="mb-2 sm:mb-4"
           >
-            <h1 className="font-space font-bold leading-[1.05]">
-              <span className="block text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white">
-                Where
+            <h1 className="font-space font-bold leading-tight md:leading-[1.1]">
+              <span className="block text-2xl sm:text-4xl lg:text-5xl xl:text-6xl text-white">
+                Nepal's Leading
               </span>
               
               <span 
-                className="block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl"
+                className="block text-3xl sm:text-5xl lg:text-6xl xl:text-7xl"
                 style={{
                   background: 'linear-gradient(90deg, #00ffff, #0ea5e9, #a855f7, #ec4899, #00ffff)',
                   backgroundSize: '200% 100%',
@@ -215,15 +215,15 @@ const Hero = () => {
                   animation: 'gradientFlow 4s linear infinite',
                 }}
               >
-                Creativity
+                Digital Marketing
               </span>
               
-              <span className="block text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white">
-                Meets <span className="text-white/50">the</span>
+              <span className="block text-2xl sm:text-4xl lg:text-5xl xl:text-6xl text-white">
+                & <span className="text-white/50">Web</span>
               </span>
               
               <span 
-                className="block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl"
+                className="block text-3xl sm:text-5xl lg:text-6xl xl:text-7xl"
                 style={{
                   background: 'linear-gradient(90deg, #a855f7, #ec4899, #f472b6)',
                   WebkitBackgroundClip: 'text',
@@ -232,7 +232,7 @@ const Hero = () => {
                   filter: 'drop-shadow(0 0 20px rgba(168, 85, 247, 0.3))',
                 }}
               >
-                Future
+                Development Agency
               </span>
             </h1>
           </motion.div>
@@ -242,12 +242,13 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-sm sm:text-base lg:text-lg text-white/50 max-w-lg mb-6 leading-relaxed"
+            className="text-xs sm:text-base lg:text-lg text-white/50 max-w-lg mb-4 sm:mb-6 leading-snug md:leading-relaxed"
           >
-            A next-gen creative studio turning ideas into 
-            <span className="text-white/80"> bold brands</span>, 
-            <span className="text-cyan-400"> stunning visuals</span>, and 
-            <span className="text-purple-400"> digital experiences</span>.
+            Subik Digital Hub — your trusted digital agency. We deliver 
+            <span className="text-white/80"> expert SEO</span>, 
+            <span className="text-cyan-400"> social media marketing</span>, 
+            <span className="text-purple-400"> Google Ads</span>, and 
+            <span className="text-white/80"> website development</span> to scale your business.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -255,11 +256,11 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-wrap items-center gap-3 mb-8"
+            className="flex flex-wrap items-center gap-3 mb-4 sm:mb-8"
           >
             <motion.button
               onClick={() => scrollToSection('#contact')}
-              className="group relative px-6 py-3 rounded-xl font-space font-semibold text-sm sm:text-base overflow-hidden"
+              className="group relative px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl font-space font-semibold text-xs sm:text-base overflow-hidden"
               style={{
                 background: 'linear-gradient(135deg, #00ffff, #0ea5e9)',
                 boxShadow: '0 0 25px rgba(0, 255, 255, 0.4)',
@@ -271,14 +272,14 @@ const Hero = () => {
               whileTap={{ scale: 0.98 }}
             >
               <span className="relative z-10 flex items-center gap-2 text-[#030014]">
-                Start a Project
+                Get a Free Quote
                 <FontAwesomeIcon icon={faArrowRight} className="group-hover:translate-x-1 transition-transform" />
               </span>
             </motion.button>
 
             <motion.button
               onClick={() => scrollToSection('#portfolio')}
-              className="group px-6 py-3 rounded-xl font-space font-semibold text-sm sm:text-base"
+              className="group px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl font-space font-semibold text-xs sm:text-base"
               style={{
                 background: 'transparent',
                 border: '1px solid rgba(168, 85, 247, 0.5)',
@@ -290,8 +291,8 @@ const Hero = () => {
               whileTap={{ scale: 0.98 }}
             >
               <span className="flex items-center gap-2 text-white/80 group-hover:text-purple-300 transition-colors">
-                <FontAwesomeIcon icon={faPlay} className="text-xs" />
-                Explore Portfolio
+                <FontAwesomeIcon icon={faPlay} className="text-[10px]" />
+                View Services
               </span>
             </motion.button>
           </motion.div>
@@ -301,16 +302,16 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="flex flex-wrap gap-6 sm:gap-8 pt-6 border-t border-white/10"
+            className="grid grid-cols-2 xs:grid-cols-3 gap-4 sm:flex sm:flex-wrap sm:gap-8 pt-4 sm:pt-6 border-t border-white/10"
           >
             {[
-              { value: '50+', label: 'Projects' },
-              { value: '30+', label: 'Clients' },
+              { value: '50+', label: 'Projects Delivered' },
+              { value: '30+', label: 'Clients in Nepal' },
               { value: '100%', label: 'Satisfaction' },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
+            ].map((stat, idx) => (
+              <div key={stat.label} className={`text-left ${idx === 2 ? 'col-span-2 xs:col-span-1' : ''}`}>
                 <div 
-                  className="text-xl sm:text-2xl lg:text-3xl font-space font-bold"
+                  className="text-lg sm:text-2xl lg:text-3xl font-space font-black"
                   style={{
                     background: 'linear-gradient(135deg, #00ffff, #a855f7)',
                     WebkitBackgroundClip: 'text',
@@ -319,7 +320,7 @@ const Hero = () => {
                 >
                   {stat.value}
                 </div>
-                <div className="text-[10px] sm:text-xs text-white/40 mt-0.5">{stat.label}</div>
+                <div className="text-[9px] sm:text-xs text-white/30 mt-0.5 uppercase tracking-wider font-bold">{stat.label}</div>
               </div>
             ))}
           </motion.div>
