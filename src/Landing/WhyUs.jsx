@@ -1,228 +1,95 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faLightbulb,
-  faBolt,
-  faGem,
-  faChartLine,
-  faHandshake,
-  faGlobe,
-  faArrowRight,
-  faCheck
-} from '@fortawesome/free-solid-svg-icons';
+import React, { useEffect, useRef } from 'react';
+
+const useReveal = (ref) => {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      }),
+      { threshold: 0.1 }
+    );
+    const els = ref.current?.querySelectorAll('.reveal');
+    els?.forEach(el => observer.observe(el));
+    return () => observer.disconnect();
+  }, [ref]);
+};
+
+const advantages = [
+  {
+    icon: '⚡',
+    title: 'Fast Execution',
+    desc: 'Idea to live website in as few as 5 days. Speed is our superpower — without cutting corners.',
+  },
+  {
+    icon: '🔧',
+    title: 'All-in-One Service',
+    desc: 'Design + Development + Content under one roof. One contact. Zero vendor confusion.',
+  },
+  {
+    icon: '💰',
+    title: 'Truly Affordable',
+    desc: 'Professional output priced for Nepali startups. No agency markup games.',
+  },
+  {
+    icon: '🔥',
+    title: 'Youth-Driven Energy',
+    desc: 'A young team that lives modern design and digital trends every single day.',
+  },
+  {
+    icon: '📊',
+    title: 'Real Track Record',
+    desc: '7 clients, 5 projects, 10,000+ active users — all since September 2024.',
+  },
+  {
+    icon: '🤝',
+    title: 'Post-Delivery Support',
+    desc: 'We don\'t disappear after launch. Support is built into every package.',
+  },
+];
 
 const WhyUs = () => {
-  const advantages = [
-    {
-      icon: faLightbulb,
-      title: 'Young & Creative Talent',
-      description: 'Fresh perspectives and innovative digital marketing strategies from a passionate team that understands the Nepal market and modern trends.',
-      gradient: 'from-amber-400 to-orange-500',
-      stat: 'Gen-Z Powered',
-    },
-    {
-      icon: faBolt,
-      title: 'Fast Delivery',
-      description: 'Quick turnarounds on SEO, social media marketing, website development, and ads management without compromising on quality.',
-      gradient: 'from-cyan-400 to-blue-500',
-      stat: '48hr Turnaround',
-    },
-    {
-      icon: faGem,
-      title: 'Premium Quality Results',
-      description: 'From website design to Google Ads campaigns, we deliver premium-quality digital marketing services that set your brand apart in Nepal.',
-      gradient: 'from-purple-500 to-pink-500',
-      stat: '100% Premium',
-    },
-    {
-      icon: faChartLine,
-      title: 'Data-Driven SEO Strategy',
-      description: 'Every SEO campaign, social media post, and ad is backed by data. We use analytics to ensure your digital marketing investment delivers measurable ROI.',
-      gradient: 'from-emerald-400 to-teal-500',
-      stat: 'Data-Driven',
-    },
-    {
-      icon: faHandshake,
-      title: 'Transparent Pricing',
-      description: 'No hidden fees. Clear, affordable pricing for all our digital marketing and web development services in Nepal — perfect for startups and businesses alike.',
-      gradient: 'from-blue-500 to-indigo-600',
-      stat: 'No Hidden Costs',
-    },
-    {
-      icon: faGlobe,
-      title: 'Nepal\'s Trusted Digital Agency',
-      description: 'Proudly based in Kathmandu, serving businesses across Lalitpur, Bhaktapur, Pokhara, and all of Nepal with world-class digital marketing services.',
-      gradient: 'from-rose-500 to-red-600',
-      stat: 'All Nepal',
-    },
-  ];
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.1 }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0 }
-  };
+  const sectionRef = useRef(null);
+  useReveal(sectionRef);
 
   return (
-    <section id="why-us" className="relative py-12 md:py-24 lg:py-32 overflow-hidden bg-dark-primary">
-      {/* Background Effects */}
-      <div className="absolute inset-0 bg-mesh opacity-40" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-neon-cyan/5 rounded-full blur-[150px]" />
-      
-      {/* Grid Pattern */}
-      <div className="absolute inset-0 bg-grid opacity-20" />
-
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
-        {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-10 md:mb-16"
-        >
-          <span className="inline-block px-4 py-2 rounded-full glass text-neon-cyan text-sm font-medium mb-4">
-            Why Choose Us
-          </span>
-          <h2 className="font-space text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Why Choose <span className="text-gradient">Subik Digital Hub</span>
+    <section id="why-us" className="section-padding" style={{ background: 'var(--bg-midnight)' }} ref={sectionRef}>
+      <div className="container-xl">
+        {/* Header */}
+        <div className="text-center mb-14">
+          <div className="reveal">
+            <span className="eyebrow" style={{ color: 'var(--accent-cyan)' }}>
+              <span className="section-marker" style={{ background: 'var(--accent-blue)' }} />
+              The Subik Advantage
+            </span>
+          </div>
+          <h2 className="font-header font-bold text-4xl md:text-5xl reveal reveal-delay-1 mt-4" style={{ color: 'var(--text-main)' }}>
+            Why Clients Choose Us<br />
+            <span style={{ color: 'var(--accent-green)' }}>(and Keep Coming Back)</span>
           </h2>
-          <p className="text-white/60 text-lg max-w-2xl mx-auto">
-            We're not just another digital agency. Here's why businesses across Nepal trust Subik Digital Hub 
-            for their digital marketing and web development needs.
-          </p>
-        </motion.div>
+        </div>
 
-        {/* Advantages Grid */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 md:mb-16"
-        >
-          {advantages.map((advantage, index) => (
-            <motion.div
-              key={advantage.title}
-              variants={itemVariants}
-              transition={{ duration: 0.5 }}
-              className="group relative"
+        {/* 2×3 Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {advantages.map((adv, i) => (
+            <div
+              key={adv.title}
+              className={`glass-panel p-8 reveal reveal-delay-${(i % 3) + 1}`}
             >
-              <motion.div
-                className="glass-card h-full p-8 transition-all duration-500 group-hover:border-white/20"
-                whileHover={{ y: -8, scale: 1.02 }}
+              <div
+                className="w-12 h-12 rounded-xl flex items-center justify-center text-xl mb-5"
+                style={{ background: 'rgba(54, 211, 153, 0.08)', border: '1px solid rgba(54, 211, 153, 0.15)' }}
               >
-                {/* Icon */}
-                <div className="flex items-start justify-between mb-6">
-                  <motion.div
-                    className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${advantage.gradient} flex items-center justify-center shadow-lg`}
-                    whileHover={{ rotate: 10, scale: 1.1 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    <FontAwesomeIcon icon={advantage.icon} className="text-white text-xl" />
-                  </motion.div>
-                  
-                  {/* Stat Badge */}
-                  <span className="px-3 py-1 rounded-full text-xs font-medium bg-white/5 text-neon-cyan border border-neon-cyan/20">
-                    {advantage.stat}
-                  </span>
-                </div>
-
-                {/* Content */}
-                <h3 className="font-space font-bold text-xl text-white mb-3 group-hover:text-gradient transition-all duration-300">
-                  {advantage.title}
-                </h3>
-                <p className="text-white/60 leading-relaxed">
-                  {advantage.description}
-                </p>
-
-                {/* Decorative Line */}
-                <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${advantage.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-b-3xl`} />
-              </motion.div>
-            </motion.div>
+                {adv.icon}
+              </div>
+              <h3 className="font-header font-bold text-lg mb-3" style={{ color: 'var(--text-main)' }}>
+                {adv.title}
+              </h3>
+              <p className="font-body text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
+                {adv.desc}
+              </p>
+            </div>
           ))}
-        </motion.div>
-
-        {/* Stats Row */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="glass-card p-6 md:p-12 rounded-3xl"
-        >
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            {[
-              { value: '50+', label: 'Projects Delivered', suffix: '' },
-              { value: '98', label: 'Client Satisfaction', suffix: '%' },
-              { value: '24', label: 'Average Turnaround', suffix: 'hrs' },
-              { value: '30+', label: 'Happy Clients', suffix: '' },
-            ].map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1, type: "spring" }}
-                className="relative"
-              >
-                <div className="font-space font-bold text-4xl md:text-5xl text-gradient mb-2">
-                  {stat.value}
-                  <span className="text-2xl">{stat.suffix}</span>
-                </div>
-                <div className="text-white/50 text-sm">{stat.label}</div>
-                
-                {/* Divider (for desktop) */}
-                {index < 3 && (
-                  <div className="hidden md:block absolute top-1/2 -right-4 w-px h-12 -translate-y-1/2 bg-gradient-to-b from-transparent via-white/20 to-transparent" />
-                )}
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-center mt-12 md:mt-16"
-        >
-          <h3 className="font-space font-bold text-2xl md:text-3xl text-white mb-4">
-            Ready to <span className="text-gradient">Transform</span> Your Brand?
-          </h3>
-          <p className="text-white/60 mb-8 max-w-xl mx-auto">
-            Join the growing list of businesses across Nepal that trust Subik Digital Hub for expert digital marketing, SEO, and web development.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <motion.a
-              href="#contact"
-              className="btn-neon-filled group"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <span>Start Your Project</span>
-              <FontAwesomeIcon icon={faArrowRight} className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </motion.a>
-            <motion.a
-              href="#portfolio"
-              className="btn-neon"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              View Our Work
-            </motion.a>
-          </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

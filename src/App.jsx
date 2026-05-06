@@ -1,49 +1,61 @@
 import React from "react";
 import Navbar from "./Components/Navbar";
 import Hero from "./Landing/Hero";
-import About from "./Landing/About";
+import ClientStrip from "./Landing/ClientStrip";
 import OurServices from "./Landing/OurServices";
 import Portfolio from "./Landing/Portfolio";
+import Process from "./Landing/Process";
 import Pricing from "./Landing/Pricing";
 import WhyUs from "./Landing/WhyUs";
 import Testimonials from "./Landing/Testimonials";
-import Contact from "./Landing/Contact";
+import Team from "./Landing/About";
+import Roadmap from "./Landing/Roadmap";
+import FinalCTA from "./Landing/FinalCTA";
 import Footer from "./Components/Footer";
 
 const App = () => {
   return (
-    <div className="relative min-h-screen bg-dark-primary">
+    <div className="relative">
       {/* Navigation */}
       <Navbar />
 
       {/* Main Content */}
       <main>
-        {/* Hero Section */}
+        {/* 1. Hero */}
         <Hero />
 
-        {/* About Section */}
-        <About />
+        {/* 2. Client Logo Strip */}
+        <ClientStrip />
 
-        {/* Services Section */}
+        {/* 3. Services */}
         <OurServices />
 
-        {/* Portfolio Section */}
-        {/* <Portfolio /> */}
+        {/* 4. Portfolio / Our Work */}
+        <Portfolio />
 
-        {/* Pricing Section */}
-        {/* <Pricing /> */}
+        {/* 5. Process */}
+        <Process />
 
-        {/* Why Choose Us Section */}
+        {/* 6. Pricing */}
+        <Pricing />
+
+        {/* 7. Why Choose Subik */}
         <WhyUs />
 
-        {/* Testimonials Section */}
+        {/* 8. Testimonials */}
         <Testimonials />
 
-        {/* Contact Section */}
-        <Contact />
+        {/* 9. Team */}
+        <Team />
+
+        {/* 10. Roadmap */}
+        <Roadmap />
+
+        {/* 11. Final CTA / Contact */}
+        <FinalCTA />
       </main>
 
-      {/* Footer */}
+      {/* 12. Footer */}
       <Footer />
     </div>
   );
