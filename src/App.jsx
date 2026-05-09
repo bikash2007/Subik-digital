@@ -10,6 +10,7 @@ import WhyUs from "./Landing/WhyUs";
 import Testimonials from "./Landing/Testimonials";
 import Team from "./Landing/About";
 import Roadmap from "./Landing/Roadmap";
+import Blog from "./Landing/Blog";
 import FinalCTA from "./Landing/FinalCTA";
 import Footer from "./Components/Footer";
 
@@ -48,10 +49,10 @@ const App = () => {
         {/* 9. Team */}
         <Team />
 
-        {/* 10. Roadmap */}
-        <Roadmap />
+        {/* 11. Blog / Insights */}
+        <Blog />
 
-        {/* 11. Final CTA / Contact */}
+        {/* 12. Final CTA / Contact */}
         <FinalCTA />
       </main>
 

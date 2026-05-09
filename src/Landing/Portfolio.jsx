@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import edtechImg from '../Media/projects/edtech.png';
-import kycImg from '../Media/projects/kyc.png';
-import fantasyImg from '../Media/projects/fantasy.png';
-import schoolImg from '../Media/projects/school.png';
+import kycImg from '../Media/projects/kyc.webp';
+import kycLearningImg from '../Media/projects/kyclearning.webp';
+import fplImg from '../Media/projects/fpl.webp';
+import bssImg from '../Media/projects/bss.webp';
+import btsImg from '../Media/projects/bts.webp';
 
 const useReveal = (ref) => {
   useEffect(() => {
@@ -37,7 +39,7 @@ const projects = [
     description: 'A clean, professional website for a growing learning center — built to inform, enroll, and inspire.',
     tags: ['Full-Stack', 'Educational', 'CMS'],
     url: 'https://kyclearningcenter.edu.np',
-    image: kycImg,
+    image: kycLearningImg,
     status: null,
     span: 'col-span-1',
   },
@@ -48,7 +50,7 @@ const projects = [
     description: 'Logo, visual identity, and complete website for a competitive preparation platform.',
     tags: ['Branding', 'Logo', 'Web App'],
     url: 'https://fantasyprepleague.com',
-    image: fantasyImg,
+    image: fplImg,
     status: null,
     span: 'col-span-1',
   },
@@ -72,7 +74,7 @@ const projects = [
     description: 'Full institutional website for one of Kathmandu\'s established secondary schools.',
     tags: ['Institutional', 'Full-Stack'],
     url: null,
-    image: schoolImg,
+    image: bssImg,
     status: '🚧 In Development',
     span: 'col-span-1',
   },
@@ -83,7 +85,7 @@ const projects = [
     description: 'Website for a technical institution focused on vocational and skills training.',
     tags: ['Institutional', 'Web Design'],
     url: null,
-    image: schoolImg,
+    image: btsImg,
     status: '🚧 In Development',
     span: 'col-span-1',
   },

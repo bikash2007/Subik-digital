@@ -17,6 +17,7 @@
   /* Digital Orbit Palette */
   --bg-midnight: #0B0E23;
   --accent-green: #36D399;
+  --cta-accent: #49C8B1;
   --accent-blue: #2563EB;
   --accent-cyan: #00D4FF;
   --text-main: #FFFFFF;
@@ -177,6 +178,33 @@ body {
 }
 
 .btn-orange:active { transform: translateY(0); }
+
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 14px 30px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #f7fffd;
+  background: linear-gradient(135deg, rgba(43, 108, 176, 0.96) 0%, rgba(73, 200, 177, 0.94) 100%);
+  border: 1px solid rgba(125, 243, 225, 0.24);
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s var(--ease-smooth);
+  white-space: nowrap;
+  box-shadow: 0 10px 24px rgba(8, 18, 34, 0.28);
+}
+
+.btn-cta:hover {
+  transform: translateY(-2px);
+  border-color: rgba(125, 243, 225, 0.34);
+  box-shadow: 0 16px 34px rgba(8, 18, 34, 0.34), 0 0 20px rgba(73, 200, 177, 0.16);
+}
+
+.btn-cta:active { transform: translateY(0); }
 
 .btn-outline-light {
   display: inline-flex;

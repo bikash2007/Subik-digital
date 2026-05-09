@@ -162,8 +162,8 @@ const Pricing = () => {
                 href={`https://wa.me/9779828940955?text=Hi%2C%20I%27m%20interested%20in%20the%20${encodeURIComponent(pkg.name)}%20package`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={pkg.featured ? 'btn-orange text-center justify-center' : 'btn-outline-light text-center justify-center text-sm py-3'}
-                style={pkg.featured ? { background: 'var(--accent-green)', borderColor: 'var(--accent-green)', boxShadow: '0 0 10px rgba(54, 211, 153, 0.3)' } : { borderColor: 'var(--accent-blue)', color: 'var(--text-main)' }}
+                className={pkg.featured ? 'btn-cta text-center justify-center' : 'btn-outline-light text-center justify-center text-sm py-3'}
+                style={pkg.featured ? {} : { borderColor: 'var(--accent-blue)', color: 'var(--text-main)' }}
               >
                 {pkg.cta}
               </a>

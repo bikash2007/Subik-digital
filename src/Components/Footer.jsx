@@ -147,8 +147,7 @@ const Footer = () => {
             href="https://wa.me/9779828940955?text=Hi%20Subik%20Digital%20Hub%2C%20I%27d%20like%20to%20start%20a%20project"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-orange text-xs py-2 px-5"
-            style={{ background: 'var(--accent-green)', borderColor: 'var(--accent-green)', boxShadow: '0 0 10px rgba(54, 211, 153, 0.3)' }}
+            className="btn-cta text-xs py-2 px-5"
           >
             Start a Project →
           </a>

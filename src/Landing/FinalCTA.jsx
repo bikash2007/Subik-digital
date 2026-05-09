@@ -74,8 +74,7 @@ const FinalCTA = () => {
             href="https://wa.me/9779828940955?text=Hi%20Subik%20Digital%20Hub%2C%20I%27d%20like%20to%20start%20a%20project"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-orange text-base px-8 py-4"
-            style={{ background: 'var(--accent-green)', borderColor: 'var(--accent-green)', boxShadow: '0 0 15px rgba(54, 211, 153, 0.4)' }}
+            className="btn-cta text-base px-8 py-4"
           >
             Message us on WhatsApp →
           </a>

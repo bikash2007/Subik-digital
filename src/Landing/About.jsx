@@ -26,6 +26,7 @@ const teamMembers = [
     tags: ['React.js', 'Node.js', 'MongoDB'],
     superpower: 'Turns Figma files into live websites in 72 hours.',
     image: bikashImg,
+    objectPosition: 'center 20%',
   },
   {
     id: 'team-suyog',
@@ -35,6 +36,7 @@ const teamMembers = [
     tags: ['Illustrator', 'Photoshop', 'Canva'],
     superpower: 'Makes logos that people actually remember.',
     image: suyogImg,
+    objectPosition: 'center 15%',
   },
   {
     id: 'team-sobit',
@@ -44,6 +46,7 @@ const teamMembers = [
     tags: ['Client Relations', 'Strategy', 'Partnerships'],
     superpower: 'Finds the right solution before you finish explaining the problem.',
     image: sobitImg,
+    objectPosition: 'center 25%',
   },
 ];
 
@@ -83,7 +86,8 @@ const Team = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  style={{ objectPosition: member.objectPosition || 'center' }}
                 />
                 {/* Role overlay at bottom of image */}
                 <div

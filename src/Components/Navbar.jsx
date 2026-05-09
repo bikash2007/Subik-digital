@@ -25,6 +25,7 @@ const Navbar = () => {
     { name: 'Process',  href: '#process' },
     { name: 'Pricing',  href: '#pricing' },
     { name: 'Team',     href: '#team' },
+    { name: 'Insights', href: '#blog' },
     { name: 'Contact',  href: '#contact' },
   ];
 
@@ -85,8 +86,7 @@ const Navbar = () => {
               href="https://wa.me/9779828940955?text=Hi%20Subik%20Digital%20Hub%2C%20I%27d%20like%20to%20start%20a%20project"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-orange text-sm py-2.5 px-5"
-              style={{ background: 'var(--accent-green)', borderColor: 'var(--accent-green)', boxShadow: '0 0 10px rgba(54, 211, 153, 0.3)' }}
+              className="btn-cta text-sm py-2.5 px-5"
             >
               Start Your Project →
             </a>
@@ -144,8 +144,7 @@ const Navbar = () => {
                   href="https://wa.me/9779828940955?text=Hi%20Subik%20Digital%20Hub%2C%20I%27d%20like%20to%20start%20a%20project"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-orange w-full text-center justify-center"
-                  style={{ background: 'var(--accent-green)', borderColor: 'var(--accent-green)' }}
+                  className="btn-cta w-full text-center justify-center"
                 >
                   Message on WhatsApp →
                 </a>

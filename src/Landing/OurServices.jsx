@@ -138,8 +138,7 @@ const OurServices = () => {
             href="https://wa.me/9779828940955?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-orange"
-            style={{ background: 'var(--accent-green)', borderColor: 'var(--accent-green)', boxShadow: '0 0 10px rgba(54, 211, 153, 0.3)' }}
+            className="btn-cta"
           >
             Discuss Your Project →
           </a>
